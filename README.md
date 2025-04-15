@@ -4,7 +4,11 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Python Versions](https://img.shields.io/pypi/pyversions/aienlarge-py.svg?logo=python&logoColor=white)](https://pypi.org/project/aienlarge-py/)
 
-`aienlarge-py` is an **unofficial** Python library that provides an asynchronous interface to the AI Enlarger image enhancement service. It allows you to programmatically upload images, enhance or enlarge them using AI-powered processes, monitor processing status, and download enhanced results. It leverages `httpx` for efficient non-blocking I/O via `asyncio`.
+`aienlarge-py` is an **unofficial**, reverse-engineered Python library that provides an asynchronous interface to the AI Enlarger image enhancement service.  
+
+It enables programmatic access to AI Enlarger's functionality — including image upload, AI-powered enhancement or enlargement, processing status checks, and result retrieval — all through an asynchronous API built with `httpx` and `asyncio` for efficient non-blocking I/O.  
+
+> This library was developed by analyzing the behavior of the official mobile app client and is not based on any proprietary or internal source code.
 
 ---
 
@@ -23,7 +27,9 @@
 
 ## ⚠️ Disclaimer
 
-This library is **unofficial** and not affiliated with or endorsed by AI Enlarger or its developers. Use at your own discretion and comply with any terms of service or usage limits set by AI Enlarger.
+This library is **unofficial** and not affiliated with or endorsed by AI Enlarger or its developers. Use at your own discretion and comply with any terms of service or usage limits set by AI Enlarger. All trademarks and copyrights related to AI Enlarger are the property of their respective owners. 
+
+This project is intended for **educational** and **interoperability purposes** only.
 
 ---
 
@@ -92,7 +98,7 @@ if __name__ == "__main__":
     asyncio.run(main())
 ```
 
-> ✅ **Note:** Replace `"path/to/your/image.jpg"` with your actual file path.
+> ⚠️ **Note:** Replace `"path/to/your/image.jpg"` with your actual file path.
 
 ---
 
